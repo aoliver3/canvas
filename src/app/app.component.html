@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div class="canvas">
+  <div class="column" *ngFor="let tile of tileCanvas">
+    <div class="row" *ngFor="let tile of tileCanvas">
+      <app-tile></app-tile>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.canvas {
+    height:L 1000px;
+    width: 1000px;
+}
+
+.row {
+    float:left;
+}
+
+.column {
+    float:left;
+}
