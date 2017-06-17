@@ -24,8 +24,7 @@ export class ColorPaletteComponent implements OnInit {
   }
 
   private setColorSelection(color: string): void {
-    console.log("Selected Color From Palette = " + color);
-    this.colorSelectionService.setSelectedColor(color);
+    this.colorSelectionService.selectedColor = color;
   }
 
 }

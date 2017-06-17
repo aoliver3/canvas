@@ -14,7 +14,7 @@ export class TileComponent {
 
   private onMouseClick():void {
     this.tileStyle = {
-      'background-color': this.colorSelectionService.getSelectedColor()
+      'background-color': this.colorSelectionService.selectedColor
     };
   }
 
