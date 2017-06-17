@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.generateTileCanvas(10);
+    this.generateTileCanvas(100);
   }
 
   private generateTileCanvas(numberOfTiles: number): void {

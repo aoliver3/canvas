@@ -1,9 +1,5 @@
 <div class="canvas">
-  <div class="column" *ngFor="let tile of tileCanvas">
-    <div class="row" *ngFor="let tile of tileCanvas">
-      <app-tile></app-tile>
-    </div>
-  </div>
+  <app-tile *ngFor="let tile of tileCanvas"></app-tile>
 </div>
 
 <app-color-palette></app-color-palette>

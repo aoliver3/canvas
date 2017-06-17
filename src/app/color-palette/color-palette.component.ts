@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorPaletteComponent implements OnInit {
 
-  colorChoices = [
+  private colorChoices: Array<string> = [
     'red',
     'green',
     'blue',
