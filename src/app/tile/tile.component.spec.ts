@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { ColorSelectionService } from '../color-selection.service';
 import { TileComponent } from './tile.component';
 
 describe('TileComponent', () => {
@@ -8,7 +9,12 @@ describe('TileComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TileComponent ]
+      declarations: [ 
+        TileComponent
+      ],
+      providers: [
+        ColorSelectionService
+      ]
     })
     .compileComponents();
   }));

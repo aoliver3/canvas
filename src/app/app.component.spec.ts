@@ -1,6 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { CanvasComponent } from './canvas/canvas.component';
+import { ColorPaletteComponent } from './color-palette/color-palette.component';
+import { ColorSelectionService } from './color-selection.service';
 import { TileComponent } from './tile/tile.component';
 
 describe('AppComponent', () => {
@@ -9,8 +12,13 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
+        CanvasComponent,
+        ColorPaletteComponent,
         TileComponent
       ],
+      providers: [
+        ColorSelectionService
+      ]
     }).compileComponents();
   }));
 

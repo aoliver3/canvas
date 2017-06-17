@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ColorPaletteComponent } from './color-palette.component';
+import { ColorSelectionService } from '../color-selection.service';
 
 describe('ColorPaletteComponent', () => {
   let component: ColorPaletteComponent;
@@ -8,7 +9,12 @@ describe('ColorPaletteComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ColorPaletteComponent ]
+      declarations: [ 
+        ColorPaletteComponent
+      ],
+      providers: [
+        ColorSelectionService
+      ]
     })
     .compileComponents();
   }));

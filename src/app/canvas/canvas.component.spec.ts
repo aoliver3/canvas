@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CanvasComponent } from './canvas.component';
+import { ColorSelectionService } from '../color-selection.service';
+import { TileComponent } from '../tile/tile.component';;
 
 describe('CanvasComponent', () => {
   let component: CanvasComponent;
@@ -8,7 +10,13 @@ describe('CanvasComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CanvasComponent ]
+      declarations: [ 
+        CanvasComponent,
+        TileComponent
+      ],
+      providers: [
+        ColorSelectionService
+      ]
     })
     .compileComponents();
   }));
