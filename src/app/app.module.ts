@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { TileComponent } from  './tile/tile.component';
+import { ColorPaletteComponent } from './color-palette/color-palette.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TileComponent
+    TileComponent,
+    ColorPaletteComponent
   ],
   imports: [
     BrowserModule,

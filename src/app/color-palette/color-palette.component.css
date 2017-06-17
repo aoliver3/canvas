@@ -1,0 +1,8 @@
+.palette {
+    height: 20px;
+    width: 350px;
+    background-color: black;
+    float: left;
+    padding: 10px;
+    text-align:center;
+}
