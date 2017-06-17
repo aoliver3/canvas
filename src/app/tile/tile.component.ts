@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { ColorSelectionService } from '../color-selection.service';
 
 @Component({
   selector: 'app-tile',
@@ -9,11 +10,11 @@ export class TileComponent {
 
   private tileStyle = { };
 
-  constructor() { }
+  constructor(private colorSelectionService: ColorSelectionService) { }
 
   private onMouseClick():void {
     this.tileStyle = {
-      'background-color': 'red'
+      'background-color': this.colorSelectionService.getSelectedColor()
     };
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorSelectionService } from '../color-selection.service';
 
 @Component({
   selector: 'app-color-palette',
@@ -17,9 +18,14 @@ export class ColorPaletteComponent implements OnInit {
     'black'
   ]
 
-  constructor() { }
+  constructor(private colorSelectionService: ColorSelectionService) { }
 
   ngOnInit() {
+  }
+
+  private setColorSelection(color: string): void {
+    console.log("Selected Color From Palette = " + color);
+    this.colorSelectionService.setSelectedColor(color);
   }
 
 }

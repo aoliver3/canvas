@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { TileComponent } from  './tile/tile.component';
 import { ColorPaletteComponent } from './color-palette/color-palette.component';
+import { ColorSelectionService } from './color-selection.service';
 import { CanvasComponent } from './canvas/canvas.component';
 
 @NgModule({
@@ -20,7 +21,9 @@ import { CanvasComponent } from './canvas/canvas.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    ColorSelectionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
