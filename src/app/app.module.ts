@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { TileComponent } from  './tile/tile.component';
 import { ColorPaletteComponent } from './color-palette/color-palette.component';
+import { CanvasComponent } from './canvas/canvas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TileComponent,
-    ColorPaletteComponent
+    ColorPaletteComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
