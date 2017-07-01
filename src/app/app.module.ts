@@ -8,13 +8,15 @@ import { TileComponent } from  './tile/tile.component';
 import { ColorPaletteComponent } from './color-palette/color-palette.component';
 import { ColorSelectionService } from './color-selection.service';
 import { CanvasComponent } from './canvas/canvas.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TileComponent,
     ColorPaletteComponent,
-    CanvasComponent
+    CanvasComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
