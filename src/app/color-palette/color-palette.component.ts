@@ -9,13 +9,13 @@ import { ColorSelectionService } from '../color-selection.service';
 export class ColorPaletteComponent implements OnInit {
 
   private colorChoices: Array<string> = [
-    'red',
-    'green',
-    'blue',
-    'purple',
-    'yellow',
-    'white',
-    'black'
+    'RED',
+    'GREEN',
+    'BLUE',
+    'PURPLE',
+    'YELLOW',
+    'WHITE',
+    'BLACK'
   ]
 
   constructor(private colorSelectionService: ColorSelectionService) { }
