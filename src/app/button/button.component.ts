@@ -8,7 +8,7 @@ import { ColorSelectionService } from '../color-selection.service';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input('buttonColor') color: string;
+  @Input('buttonColor') colorChoice: string;
 
   constructor(private colorSelectionService: ColorSelectionService) { }
 

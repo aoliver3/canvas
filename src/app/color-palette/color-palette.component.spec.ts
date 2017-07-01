@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ColorPaletteComponent } from './color-palette.component';
 import { ColorSelectionService } from '../color-selection.service';
+import { ButtonComponent } from '../button/button.component';
 
 describe('ColorPaletteComponent', () => {
   let component: ColorPaletteComponent;
@@ -9,7 +10,8 @@ describe('ColorPaletteComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ 
+      declarations: [
+        ButtonComponent,
         ColorPaletteComponent
       ],
       providers: [

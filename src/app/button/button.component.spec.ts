@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ButtonComponent } from './button.component';
+import { ColorSelectionService } from '../color-selection.service';
 
 describe('ButtonComponent', () => {
   let component: ButtonComponent;
@@ -8,7 +9,12 @@ describe('ButtonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ButtonComponent ]
+      declarations: [ 
+        ButtonComponent 
+      ],
+      providers: [
+        ColorSelectionService
+      ]
     })
     .compileComponents();
   }));
