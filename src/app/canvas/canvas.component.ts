@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ResetService } from '../reset.service';
+import { TileComponent } from '../tile/tile.component';
 
 @Component({
   selector: 'app-canvas',
@@ -9,17 +11,14 @@ export class CanvasComponent implements OnInit {
 
   private tileCanvas: Array<string> = [];
 
-  constructor() { }
+  constructor(private resetService: ResetService) { }
 
   ngOnInit() {
-    this.generateTileCanvas(100);
+    this.generateTileCanvas();
   }
 
-  private generateTileCanvas(numberOfTiles: number): void {
-    for (let i=0; i<numberOfTiles; i++) {
-      let tile: string = '';
-      this.tileCanvas.push(tile);
-    }
+  private generateTileCanvas(): void {
+    this.tileCanvas = this.resetService.resetTileCanvas(100);
   }
 
 }
