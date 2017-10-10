@@ -22,4 +22,8 @@ export class ColorPaletteComponent implements OnInit {
   ngOnInit() {
   }
 
+  private resetCanvas(): void {
+    
+  }
+
 }
