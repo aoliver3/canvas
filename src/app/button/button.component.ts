@@ -8,7 +8,7 @@ import { ColorSelectionService } from '../color-selection.service';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input('buttonColor') colorChoice: string;
+  @Input('buttonColorFromPalette') colorChoice: string;
 
   private buttonStyle = { };
 
@@ -19,11 +19,19 @@ export class ButtonComponent implements OnInit {
 
   private setColorSelection(color: string): void {
     this.colorSelectionService.selectedColor = color;
+    this.setButtonStyle();
   }
 
   private setButtonStyle(): void {
-    this.buttonStyle = {
-      "button-color": this.colorChoice
+    if (this.colorChoice == "BLACK") {
+      this.buttonStyle = {
+        "background-color": this.colorChoice,
+        "color": "white"
+      }
+    } else {
+      this.buttonStyle = {
+        "background-color": this.colorChoice,
+      }
     }
   }
 
