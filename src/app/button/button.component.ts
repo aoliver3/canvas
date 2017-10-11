@@ -8,31 +8,17 @@ import { ColorSelectionService } from '../color-selection.service';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input('buttonColorFromPalette') colorChoice: string;
+  @Input('buttonColorFromPalette') buttonStyle = {};
 
-  private buttonStyle = { };
+  private colorChoice: string;
 
   constructor(private colorSelectionService: ColorSelectionService) { }
 
   ngOnInit() {
   }
 
-  private setColorSelection(color: string): void {
+  private setColorSelection(color: any): void {
     this.colorSelectionService.selectedColor = color;
-    this.setButtonStyle();
-  }
-
-  private setButtonStyle(): void {
-    if (this.colorChoice == "BLACK") {
-      this.buttonStyle = {
-        "background-color": this.colorChoice,
-        "color": "white"
-      }
-    } else {
-      this.buttonStyle = {
-        "background-color": this.colorChoice,
-      }
-    }
   }
 
 }

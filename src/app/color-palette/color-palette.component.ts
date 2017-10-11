@@ -19,11 +19,23 @@ export class ColorPaletteComponent implements OnInit {
     'BROWN',
     'PINK',
     'TEAL'
-  ]
+  ];
+
+  private colorStyles: Array<any> = [];
 
   constructor() { }
 
   ngOnInit() {
+    this.createButtonStyles();
+  }
+
+  private createButtonStyles(): void {
+    this.colorChoices.forEach((color: string) => {
+      let buttonStyle = {
+        "background-color": color
+      };
+      this.colorStyles.push(buttonStyle);
+    })
   }
 
 }
