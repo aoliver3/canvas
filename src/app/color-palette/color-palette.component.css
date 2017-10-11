@@ -1,9 +1,8 @@
 .palette {
-    height: 20px;
-    width: 994px;
-    background-color: white;
-    padding: 10px 0px 10px 0px;
-    text-align: center;
-    border: 3px solid black;
-    border-radius: 10px 10px 0px 0px;
+    width: 100px;
+    margin-top: 5px;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
