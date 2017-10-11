@@ -10,8 +10,10 @@
     height: 50px;
     width: 100px;
     font-weight: bold;
-    position: absolute;
+    position: fixed;
     right: 0px;
+    top: 0px;
     color: white;
     background-color: red;
+    font-size: large;
 }
