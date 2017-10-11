@@ -14,7 +14,11 @@ export class ColorPaletteComponent implements OnInit {
     'PURPLE',
     'YELLOW',
     'WHITE',
-    'BLACK'
+    'BLACK',
+    'ORANGE',
+    'BROWN',
+    'PINK',
+    'TEAL'
   ]
 
   constructor() { }
