@@ -9,7 +9,6 @@ import { ColorPaletteComponent } from './color-palette/color-palette.component';
 import { ColorSelectionService } from './color-selection.service';
 import { CanvasComponent } from './canvas/canvas.component';
 import { ButtonComponent } from './button/button.component';
-import { ResetService } from './reset.service';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { ResetService } from './reset.service';
     HttpModule
   ],
   providers: [
-    ColorSelectionService,
-    ResetService
+    ColorSelectionService
   ],
   bootstrap: [AppComponent]
 })
