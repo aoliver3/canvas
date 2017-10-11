@@ -1,18 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ColorPaletteComponent } from './color-palette.component';
+import { ButtonComponent } from './button.component';
 import { ColorSelectionService } from '../color-selection.service';
-import { ButtonComponent } from '../button/button.component';
 
-describe('ColorPaletteComponent', () => {
-  let component: ColorPaletteComponent;
-  let fixture: ComponentFixture<ColorPaletteComponent>;
+describe('ButtonComponent', () => {
+  let component: ButtonComponent;
+  let fixture: ComponentFixture<ButtonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        ButtonComponent,
-        ColorPaletteComponent
+      declarations: [ 
+        ButtonComponent 
       ],
       providers: [
         ColorSelectionService
@@ -22,7 +20,7 @@ describe('ColorPaletteComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ColorPaletteComponent);
+    fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

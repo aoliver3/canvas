@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ColorSelectionService } from '../color-selection.service';
 
 @Component({
   selector: 'app-color-palette',
@@ -9,22 +8,22 @@ import { ColorSelectionService } from '../color-selection.service';
 export class ColorPaletteComponent implements OnInit {
 
   private colorChoices: Array<string> = [
-    'red',
-    'green',
-    'blue',
-    'purple',
-    'yellow',
-    'white',
-    'black'
+    'RED',
+    'GREEN',
+    'BLUE',
+    'PURPLE',
+    'YELLOW',
+    'WHITE',
+    'BLACK',
+    'ORANGE',
+    'BROWN',
+    'PINK',
+    'TEAL'
   ]
 
-  constructor(private colorSelectionService: ColorSelectionService) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  private setColorSelection(color: string): void {
-    this.colorSelectionService.selectedColor = color;
   }
 
 }
