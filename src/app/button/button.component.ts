@@ -10,8 +10,6 @@ export class ButtonComponent implements OnInit {
 
   @Input('buttonColorFromPalette') buttonStyle = {};
 
-  private colorChoice: string;
-
   constructor(private colorSelectionService: ColorSelectionService) { }
 
   ngOnInit() {
