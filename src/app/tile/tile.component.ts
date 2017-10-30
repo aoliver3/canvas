@@ -13,9 +13,7 @@ export class TileComponent {
   constructor(private colorSelectionService: ColorSelectionService) { }
 
   private onMouseClick():void {
-    this.tileStyle = {
-      'background-color': this.colorSelectionService.selectedColor
-    };
+    this.tileStyle = this.colorSelectionService.selectedColor;
   }
 
 }
