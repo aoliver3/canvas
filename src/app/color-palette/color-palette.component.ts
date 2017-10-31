@@ -31,10 +31,19 @@ export class ColorPaletteComponent implements OnInit {
 
   private createButtonStyles(): void {
     this.colorChoices.forEach((color: string) => {
-      let buttonStyle = {
+      let buttonStyle = {};
+      if (color == 'BLACK') {
+        buttonStyle = {
         "background-color": color,
-        "text": color
-      };
+        "text": color,
+        "color": "white"
+        };
+      } else {
+        buttonStyle = {
+          "background-color": color,
+          "text": color,
+        };
+      }
       this.colorStyles.push(buttonStyle);
     })
   }
