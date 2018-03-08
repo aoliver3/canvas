@@ -1,5 +1,16 @@
 .color-button {
+    margin-left: -45px;
     margin-bottom: 5px;
     border-width: 2px 2px 2px 0px;
     border-radius: 0px 25px 25px 0px;
+}
+
+.color-button:hover {
+    animation-name: slide-out;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-out {
+    to {margin-left: 0px;}
 }
