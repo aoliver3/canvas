@@ -33,8 +33,10 @@ export class ColorPaletteComponent implements OnInit {
     this.colorChoices.forEach((color: string) => {
       let buttonStyle = {
         "background-color": color,
-        "text": color
+        "text": color,
+        "color": color === 'BLACK' ? 'white' : 'black'
       };
+      
       this.colorStyles.push(buttonStyle);
     })
   }
