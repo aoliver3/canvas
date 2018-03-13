@@ -1,0 +1,27 @@
+#my-form {
+    margin: 20px;
+    padding: 10px;
+    border: 10px solid blue;
+    border-radius: 20px;
+    width: 340px;
+}
+
+#my-input {
+    font-size: x-large;
+    text-align: center;
+    border: 7px dashed orange;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#plus {
+    border: 10px solid green;
+    border-radius: 10px;
+}
+
+#minus {
+    border: 10px solid red;
+    border-radius: 10px;
+}
