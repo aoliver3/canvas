@@ -1,18 +1,3 @@
 <app-color-palette></app-color-palette>
 <app-canvas></app-canvas>
-
-<form id="my-form">
-
-    <button id="plus" (mousedown)="plus()">PLUS</button>
-
-    <input name="unicorn"
-            id="my-input"
-            type="tel" 
-            maxlength="2"
-            [(ngModel)]="currentValue"
-            (ngModelChange)="removeInvalidInputs($event)">
-
-    <button id="minus" (mousedown)="minus()">MINUS</button>
-
-    <!-- <button type="submit" (onclick)="submit()">SUBMIT</button> -->
-</form>
+<app-quantity-selector></app-quantity-selector>

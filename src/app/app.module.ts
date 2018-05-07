@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { TileComponent } from  './tile/tile.component';
+import { Colors } from './color-palette/colors';
+import { TileComponent } from './tile/tile.component';
 import { ColorPaletteComponent } from './color-palette/color-palette.component';
 import { ColorSelectionService } from './color-selection.service';
 import { CanvasComponent } from './canvas/canvas.component';
 import { ButtonComponent } from './button/button.component';
+import { QuantitySelectorComponent } from './quantity-selector/quantity-selector.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { ButtonComponent } from './button/button.component';
     TileComponent,
     ColorPaletteComponent,
     CanvasComponent,
-    ButtonComponent
+    ButtonComponent,
+    QuantitySelectorComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { ButtonComponent } from './button/button.component';
     HttpModule
   ],
   providers: [
-    ColorSelectionService
+    ColorSelectionService, 
+    Colors
   ],
   bootstrap: [AppComponent]
 })

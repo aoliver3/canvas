@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Colors } from './colors';
 
 @Component({
   selector: 'app-color-palette',
@@ -7,38 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorPaletteComponent implements OnInit {
 
-  private colorChoices: Array<string> = [
-    'RED',
-    'GREEN',
-    'BLUE',
-    'PURPLE',
-    'YELLOW',
-    'WHITE',
-    'BLACK',
-    'ORANGE',
-    'BROWN',
-    'PINK',
-    'TEAL'
-  ];
+  private buttonStyles: Array<any> = [];
 
-  private colorStyles: Array<any> = [];
-
-  constructor() { }
+  constructor(private colors: Colors) { }
 
   ngOnInit() {
     this.createButtonStyles();
   }
 
   private createButtonStyles(): void {
-    this.colorChoices.forEach((color: string) => {
-      let buttonStyle = {
-        "background-color": color,
-        "text": color,
-        "color": color === 'BLACK' ? 'white' : 'black'
+    const colorChoices: Array<string> = this.colors.getColors();
+
+    colorChoices.forEach((color: string) => {
+      const buttonStyle = {
+        'background-color': color,
+        'text': color,
+        'color': color === 'BLACK' ? 'white' : 'black'
       };
-      
-      this.colorStyles.push(buttonStyle);
-    })
+
+      this.buttonStyles.push(buttonStyle);
+    });
   }
 
 }
